@@ -13,6 +13,8 @@ allprojects {
     group = "org.fakester"
 }
 
+
+
 ignitionModule {
     // name of the .modl file to build
     fileName.set("RadComponents")
@@ -47,6 +49,7 @@ ignitionModule {
     hooks.putAll(
         mapOf(
             "org.fakester.gateway.RadGatewayHook" to "G",
+            "org.goobers.gateway.EncryptGatewayHook" to "G",
             "org.fakester.designer.RadDesignerHook" to "D"
         )
     )
